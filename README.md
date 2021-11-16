@@ -1,19 +1,13 @@
 # blockchain-developer-bootcamp-final-project
 
-## Ideas
+### Shopping Center Contract
 
-### Events organization Contract
+* Users should be able to upload an article, give a discription, a price and add the quantity in stock
 
-* Users should be able to register and specify the kind of events they are interested in on the contract 
+* Users should be able to buy an article
 
-* Users should be notified when an event they are interested in is happening
+* Users should be able to see the quantity remaining stock
 
-* Users should be able to buy tickets for a specific event
+* The Seller should not be able to but their own article
 
-* Users should be able to buy tickets for their friends
-
-* Events organizers should be able to know events people in a specific region are interested in
-
-* Events organizers should be able to create and advertise a specific event
-
-* Events organizers should be able to sell and authenticate events tickets
+* Buyers should not be able to buy Sold Out Articles
