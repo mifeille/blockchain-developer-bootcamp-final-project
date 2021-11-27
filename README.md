@@ -2,12 +2,12 @@
 
 ### Shopping Center Contract
 
-* Users should be able to upload an article, give a discription, a price and add the quantity in stock
+* Users should be able to upload an article, give a discription and a unit price
 
 * Users should be able to buy an article
 
-* Users should be able to see the quantity remaining stock
+* Users should be able to add articles on a wishlist
 
-* The Seller should not be able to but their own article
+* The Seller should be able to delete the uploaded article
 
-* Buyers should not be able to buy Sold Out Articles
+* The wishlist owner should be able to remove an article from the list
