@@ -27,20 +27,38 @@ The project has 4 main folders: migrations, public, src and test.
   the second one is `components` that has react components and the last one is contracts that has the smart contracts.
 * test that has the smart contract tests
 
-+-- _truffle-config.js
-+-- _migrations
-|   +-- 1_initial_migration.js
-|   +-- 2_deploy_contracts.js
-+-- _public
-|   +-- favicon.ico
-|   +-- index.html
-|   +-- manifest.json
-+-- _src
-|   +-- abis
-|   +-- components
-|   +-- contracts
-+-- _test
-|   +-- Isoko.tes.js
+##### Directory Tree
+```
+📦migrations
+ ┣ 📜1_initial_migration.js
+ ┗ 📜2_deploy_contracts.js
+📦public
+ ┣ 📜favicon.ico
+ ┣ 📜index.html
+ ┗ 📜manifest.json
+📦src
+ ┣ 📂abis
+ ┃ ┣ 📜Initializable.json
+ ┃ ┣ 📜Isoko.json
+ ┃ ┣ 📜Migrations.json
+ ┃ ┗ 📜String.json
+ ┣ 📂components
+ ┃ ┣ 📜App.css
+ ┃ ┣ 📜App.js
+ ┃ ┣ 📜Main.js
+ ┃ ┗ 📜Navbar.js
+ ┣ 📂contracts
+ ┃ ┣ 📜Isoko.sol
+ ┃ ┗ 📜Migrations.sol
+ ┣ 📜index.js
+ ┣ 📜logo.png
+ ┣ 📜photo.png
+ ┗ 📜serviceWorker.js
+📦test
+┗ 📜Isoko.test.js
+📜truffle-config.js
+📜package.json
+ ```
 
 To access the application frontend, Please click [here](https://mifeille.github.io/blockchain-developer-bootcamp-final-project/).
 
