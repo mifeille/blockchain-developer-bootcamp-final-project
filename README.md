@@ -19,6 +19,32 @@ Isoko is a blockchain application that will be used to buy and sell articles.
 This application is being build using React.js for the frontend and Ethereum and Solidity for writing smart contracts.
 Articles pictures are stored on IPFS.
 
+#### Directory Structure
+The project has 4 main folders: migrations, public, src and test.
+* Migrations thats hold the code to deploy smart contracts
+* public for the frontend
+* src that has 3 sub-folders, the first one is `abis` that contains the migrated contracts abis,
+  the second one is `components` that has react components and the last one is contracts that has the smart contracts.
+* test that has the smart contract tests
+
++-- _truffle-config.js
++-- _migrations
+|   +-- 1_initial_migration.js
+|   +-- 2_deploy_contracts.js
++-- _public
+|   +-- favicon.ico
+|   +-- index.html
+|   +-- manifest.json
++-- _src
+|   +-- abis
+|   +-- components
+|   +-- contracts
++-- _test
+|   +-- Isoko.tes.js
+
+To access the application frontend, Please click [here](https://mifeille.github.io/blockchain-developer-bootcamp-final-project/).
+
+
 #### Run the Project Locally
 * Clone this repo on your local machine using this command `git clone https://github.com/mifeille/blockchain-developer-bootcamp-final-project.git`
 * Make sure you have Node.js and Truffle suite installed on your machine
@@ -31,6 +57,4 @@ Articles pictures are stored on IPFS.
 
 #### Project Screencast
 
-To watch the appplication screencast, Please click [here](https://www.loom.com/share/b33b0d3c055d440ca68d821fbd060f72)
-
-To see the application, Please click [here](https://mifeille.github.io/blockchain-developer-bootcamp-final-project/)
+To watch the appplication screencast, Please click [here](https://www.loom.com/share/b33b0d3c055d440ca68d821fbd060f72).
