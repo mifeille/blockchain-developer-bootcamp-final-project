@@ -17416,6 +17416,377 @@
     "version": "0.8.7+commit.e28d00a7.Emscripten.clang"
   },
   "networks": {
+    "3": {
+      "events": {
+        "0x955e78bb1a0003b652d5c1a721a6b2bc74eb605345d0c81397b256549b7a97e7": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "id",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "string",
+                  "name": "imageHash",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "description",
+                  "type": "string"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "unitPrice",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "quantity",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address payable",
+                  "name": "owner",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "quantitySold",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "soldOut",
+                  "type": "bool"
+                }
+              ],
+              "indexed": false,
+              "internalType": "struct Isoko.Article",
+              "name": "article",
+              "type": "tuple"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "wishListOwner",
+              "type": "address"
+            }
+          ],
+          "name": "AddedToWishList",
+          "type": "event"
+        },
+        "0x5d703592788a7b14e6fd84571f960ae570b929c01c88769c377ee904d04338ae": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "imageHash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "unitPrice",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "quantitySold",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "bool",
+              "name": "soldOut",
+              "type": "bool"
+            }
+          ],
+          "name": "ArticleCreated",
+          "type": "event"
+        },
+        "0x1616e51cadd5142589a06b11ff1a242d0a49857a606b01f3cdfcad12abfd352d": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "id",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "string",
+                  "name": "imageHash",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "description",
+                  "type": "string"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "unitPrice",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "quantity",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address payable",
+                  "name": "owner",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "quantitySold",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "soldOut",
+                  "type": "bool"
+                }
+              ],
+              "indexed": false,
+              "internalType": "struct Isoko.Article",
+              "name": "article",
+              "type": "tuple"
+            }
+          ],
+          "name": "ArticleDeleted",
+          "type": "event"
+        },
+        "0x798aa7e1d9a9e94d229da30785e480d4daf11a833c70b6c4e6760787faa7d1ed": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "imageHash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "unitPrice",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "quantitySold",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "bool",
+              "name": "soldOut",
+              "type": "bool"
+            }
+          ],
+          "name": "ArticlePurchased",
+          "type": "event"
+        },
+        "0x268cf6dd08b1099c0edceeaa2689bf5562f0fa2472b3f046c5c449dd28bc3654": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "id",
+                  "type": "uint256"
+                },
+                {
+                  "components": [
+                    {
+                      "internalType": "uint256",
+                      "name": "id",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "string",
+                      "name": "imageHash",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "string",
+                      "name": "description",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "unitPrice",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "quantity",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "address payable",
+                      "name": "owner",
+                      "type": "address"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "quantitySold",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "bool",
+                      "name": "soldOut",
+                      "type": "bool"
+                    }
+                  ],
+                  "internalType": "struct Isoko.Article",
+                  "name": "article",
+                  "type": "tuple"
+                },
+                {
+                  "internalType": "address payable",
+                  "name": "wishListOwner",
+                  "type": "address"
+                }
+              ],
+              "indexed": false,
+              "internalType": "struct Isoko.WishList",
+              "name": "wish",
+              "type": "tuple"
+            }
+          ],
+          "name": "RemovedFromWishList",
+          "type": "event"
+        },
+        "0xfffc0dca6ea7c78f0203f27739356000d02560cad9684c6806e448c8d70d1f75": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "id",
+                  "type": "uint256"
+                },
+                {
+                  "components": [
+                    {
+                      "internalType": "uint256",
+                      "name": "id",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "string",
+                      "name": "imageHash",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "string",
+                      "name": "description",
+                      "type": "string"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "unitPrice",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "quantity",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "address payable",
+                      "name": "owner",
+                      "type": "address"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "quantitySold",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "bool",
+                      "name": "soldOut",
+                      "type": "bool"
+                    }
+                  ],
+                  "internalType": "struct Isoko.Article",
+                  "name": "article",
+                  "type": "tuple"
+                },
+                {
+                  "internalType": "address payable",
+                  "name": "wishListOwner",
+                  "type": "address"
+                }
+              ],
+              "indexed": false,
+              "internalType": "struct Isoko.WishList[]",
+              "name": "myWishList",
+              "type": "tuple[]"
+            }
+          ],
+          "name": "ViewedWishList",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xB5491eD345274FECE4099397EB986C01b20D5A74",
+      "transactionHash": "0xe218a6135b0004d0b561c10fb8a4b9ea73c2773be821b66c11220629fe4557c5"
+    },
     "5777": {
       "events": {
         "0x955e78bb1a0003b652d5c1a721a6b2bc74eb605345d0c81397b256549b7a97e7": {
@@ -17789,7 +18160,7 @@
     }
   },
   "schemaVersion": "3.2.3",
-  "updatedAt": "2021-11-27T16:34:52.892Z",
+  "updatedAt": "2021-12-15T08:05:20.531Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
